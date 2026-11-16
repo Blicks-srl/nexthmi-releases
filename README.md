@@ -36,6 +36,7 @@ sha256sum -c --ignore-missing nexthmi-2.0.0.1.sha256
 
 Si aggiorna **a macchina ferma**: l'aggiornamento ferma le pagine e l'acquisizione per qualche minuto, fa prima una copia di sicurezza dei dati e riparte con la versione nuova. Se un passo non riesce, torna alla versione di prima.
 
+- **Windows, da internet** (dalla versione 2.0.1.0): in **Diagnostica › Aggiornamento software** premere **Cerca aggiornamenti**; se c'è una versione più nuova, **Scarica** la porta sul PC e ne controlla firma e SHA-256, poi si tocca la versione e si preme **Aggiorna**. Il PC deve raggiungere `github.com`.
 - **Windows, da chiavetta:** copiare il file `.exe` nella cartella principale di una chiavetta USB, inserirla nel PC della macchina, aprire **Diagnostica › Aggiornamento software**, toccare la versione e premere **Aggiorna**.
 - **Windows, sul PC:** doppio clic sul file `.exe`. Chiede i diritti di amministratore, installa su un PC nuovo e aggiorna dove NextHMI c'è già.
 - **Linux:** copiare sul PC il `.run` giusto, poi:
