@@ -36,8 +36,8 @@ sha256sum -c --ignore-missing nexthmi-2.0.0.1.sha256
 
 Si aggiorna **a macchina ferma**: l'aggiornamento ferma le pagine e l'acquisizione per qualche minuto, fa prima una copia di sicurezza dei dati e riparte con la versione nuova. Se un passo non riesce, torna alla versione di prima.
 
-- **Windows, da internet** (dalla versione 2.0.1.0): in **Diagnostica › Aggiornamento software** premere **Cerca aggiornamenti**; se c'è una versione più nuova, **Scarica** la porta sul PC e ne controlla firma e SHA-256, poi si tocca la versione e si preme **Aggiorna**. Il PC deve raggiungere `github.com`.
-- **Windows, da chiavetta:** copiare il file `.exe` nella cartella principale di una chiavetta USB, inserirla nel PC della macchina, aprire **Diagnostica › Aggiornamento software**, toccare la versione e premere **Aggiorna**.
+- **Windows, da internet** (dalla versione 2.0.1.0): in **Schermo › Aggiornamento software** (in **Diagnostica** fino alla 2.0.5.0) premere **Cerca aggiornamenti**; se c'è una versione più nuova, **Scarica** la porta sul PC e ne controlla firma e SHA-256, poi si tocca la versione e si preme **Aggiorna**. Il PC deve raggiungere `github.com`.
+- **Windows, da chiavetta:** copiare il file `.exe` nella cartella principale di una chiavetta USB, inserirla nel PC della macchina, aprire **Schermo › Aggiornamento software** (in **Diagnostica** fino alla 2.0.5.0), toccare la versione e premere **Aggiorna**.
 - **Windows, sul PC:** doppio clic sul file `.exe`. Chiede i diritti di amministratore, installa su un PC nuovo e aggiorna dove NextHMI c'è già.
 - **Linux:** copiare sul PC il `.run` giusto, poi:
 
@@ -48,3 +48,13 @@ Si aggiorna **a macchina ferma**: l'aggiornamento ferma le pagine e l'acquisizio
 ## Prima installazione
 
 Windows: doppio clic sul file `.exe`. Linux: `sudo sh nexthmi-<versione>-linux-arm64.run -prova` mostra i passi senza cambiare niente, poi lo stesso comando senza `-prova` installa. Ogni pacchetto contiene `INSTALL.md`, la guida completa: opzioni, copie di sicurezza, ritorno alla versione di prima.
+
+## Licenze
+
+Dalla versione 2.0.6.0 alcune funzioni si accendono con la licenza della macchina: la conservazione dei dati oltre i 90 giorni, fino a 365, e l'accesso alle pagine e all'API dagli altri dispositivi. Senza licenza la macchina e il suo pannello lavorano come sempre.
+
+Una licenza è un file `<matricola>.lic`, firmato da Nemesis, che vale solo per quella matricola. Le release che si chiamano `licenses-NN` non sono versioni del programma: tengono le licenze delle macchine la cui matricola comincia con `NN`. Sulla macchina si installa in uno di questi modi:
+
+- **Da internet:** in **Schermo › Licenza** premere **Cerca licenza**. Il PC deve raggiungere `github.com`.
+- **Da chiavetta:** copiare il file `<matricola>.lic` nella cartella principale di una chiavetta USB, inserirla nel PC della macchina e premere **Installa dalla chiavetta** in **Schermo › Licenza**.
+- **Con il codice:** aprire il file `.lic` con un editor di testo, copiare tutto e incollarlo nel campo del codice in **Schermo › Licenza**, oppure nella pagina che un altro dispositivo vede quando l'accesso non è attivo.
