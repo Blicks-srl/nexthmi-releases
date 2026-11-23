@@ -51,7 +51,7 @@ Windows: doppio clic sul file `.exe`. Linux: `sudo sh nexthmi-<versione>-linux-a
 
 ## Licenze
 
-Dalla versione 2.0.6.0 alcune funzioni si accendono con la licenza della macchina: la conservazione dei dati oltre i 90 giorni, fino a 365, e l'accesso alle pagine e all'API dagli altri dispositivi. Senza licenza la macchina e il suo pannello lavorano come sempre.
+Dalla versione 2.0.6.0 alcune funzioni si accendono con la licenza della macchina, Lumina Prism: la conservazione dei dati oltre i 90 giorni, fino a 365; l'accesso alle pagine dagli altri dispositivi; l'API esterna; dalla versione 2.0.9.0, il PDF e il CSV di ogni lotto finito salvati da soli in una cartella, anche di rete. Dalla 2.0.9.0 l'API ha la sua funzione nella licenza, e senza non risponde nemmeno sul PC della macchina. Senza licenza la macchina e il suo pannello lavorano come sempre.
 
 Una licenza è un file `<matricola>.lic`, firmato da Nemesis, che vale solo per quella matricola. Le release che si chiamano `licenses-NN` non sono versioni del programma: tengono le licenze delle macchine la cui matricola comincia con `NN`. Sulla macchina si installa in uno di questi modi:
 
